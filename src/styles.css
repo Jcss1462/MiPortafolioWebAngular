@@ -3,3 +3,10 @@
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(0, 119, 255) rgb(255, 255, 255);
+  }
+  
