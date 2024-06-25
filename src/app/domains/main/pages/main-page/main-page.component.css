@@ -1,96 +1,109 @@
-.principalContainer{
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    width: 99.2vw;
-    display: flex;
-    justify-content: center;
-    background: black;
+.principalContainer {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 99.2vw;
+  display: flex;
+  justify-content: center;
+  background: black;
 }
 
 /*Header*/
 
-.Header{
-    background: rgb(0, 0, 0);
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 2rem;
-    color: white;
+.Header {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  background: linear-gradient(45deg, #000000, #1c1c1c, #2e2e2e, #3c3c3c, #000000);
+  background-size: 300% 300%;
+  animation: gradientAnimation 30s ease infinite;
 }
 
-.Header i{
-    color: yellow;
-    text-shadow: 0 0 50px rgba(255, 255, 0, 1);
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-.Header b{
-    font-size: 3rem;
+
+
+.Header i {
+  color: yellow;
+  text-shadow: 0 0 50px rgba(255, 255, 0, 1);
 }
 
-.headerBtn button{
-    width: 130px;
+.Header b {
+  font-size: 3rem;
 }
+
+.headerBtn button {
+  width: 130px;
+}
+
+
 
 
 /*about me*/
 
-.annoutMe{
-    margin: 0;
-    padding: 0;
-    background: rgb(78, 78, 78);
-    width: 100%;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 2rem;
-    color: rgb(77, 77, 77);
+.aboutMe {
+  margin: 0;
+  padding: 0;
+  background: rgb(0, 0, 0);
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
 
 }
 
+.containerText {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+
+
 .framed-photo {
-    position: relative;
-    display: inline-block;
-  }
-  .framed-photo img {
-    display: block;
-    width: 300px;
-    border-radius: 50%; 
-  }
-  .framed-photo::before {
-    content: '';
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
-    border: 5px solid #333;
-    border-radius: 50%; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    animation: animate-border 5s linear infinite;
-  }
-  @keyframes animate-border {
-    0% {
-      border-color: #333;
-      border: 50px ;
-    }
-    25% {
-      border-color: #ff0000;
-    }
-    50% {
-      border-color: #00ff00;
-    }
-    75% {
-      border-color: #0000ff;
-    }
-    100% {
-      border-color: #333;
-    }
-  }
+  position: relative;
+  display: inline-block;
+}
+
+.framed-photo img {
+  display: block;
+  width: 250px;
+  border-radius: 50%;
+}
+
+.framed-photo::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  
+}
