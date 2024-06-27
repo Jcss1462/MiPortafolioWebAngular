@@ -1,0 +1,56 @@
+<div class="projects  row">
+
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <p><b>Proyectos destacados</b></p>
+        </div>
+    </div>
+
+    @for (item of projects; track item.Title; let i =$index) {
+
+    <div class="row cardContainer">
+
+        @if (i%0!=0) {
+        <div class="col-sm-6">
+            <img [src]="item.mainImage" [alt]="item.Title" class="img-framed">
+        </div>
+        }
+
+        <div class="col-sm-6 project-card">
+
+            <h2 class="project-title"><b>{{item.Title}}</b></h2>
+            <p class="project-description">{{item.Description}}</p>
+            <b class="tecnologyLable">Tecnologias:</b>
+            <div class="project-icons row">
+                @for (tecnologi of item.icons; track tecnologi) {
+                <div class="tecnologyContainer col-sm-3">
+                    <div class="tecnology-content">
+                        <img [src]="tecnologi.Img" [alt]="tecnologi.TecnolgyName">
+                        <label>{{tecnologi.TecnolgyName}}</label>
+                    </div>
+                </div>
+                }
+            </div>
+            <b class="tecnologyLable">Links:</b>
+            <div class="linksRow row">
+                @for (link of item.links; track link.linkName) {
+                <div class="col-sm-1">
+                    <a [href]="link.url" target="_blank"><i [class]="link.class"></i></a>
+                </div>
+                }
+            </div>
+
+        </div>
+
+
+        @if (i%0==0) {
+        <div class="col-sm-6">
+            <img [src]="item.mainImage" [alt]="item.Title" class="img-framed">
+        </div>
+        }
+
+    </div>
+
+    }
+
+</div>

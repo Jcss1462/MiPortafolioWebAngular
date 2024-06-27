@@ -1,0 +1,98 @@
+.projects {
+    margin: 0;
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    background: black;
+}
+
+.cardContainer{
+    padding: 30px;
+}
+
+.cardContainer img{
+    width:500px;
+}
+
+.img-framed {
+    border: 5px solid #f0f0f0; /* Color del borde */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.2s, box-shadow 0.2s; /* Transiciones suaves */
+}
+
+.img-framed:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más grande */
+}
+
+/**/
+
+.project-card {
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+}
+
+.project-title {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.project-description {
+    font-size: 0.6em;
+    margin-bottom: 15px;
+    color: #666666;
+}
+
+
+.tecnologyLable{
+    font-size: 0.6em;
+}
+
+
+.tecnologyContainer {
+    display: flex;
+    align-items: s;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.tecnology-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tecnology-content img {
+    width: 50px;
+    height: auto;
+    margin: 10px;
+}
+
+.tecnology-content label {
+    font-size: 0.5em;
+    color: #ffffff;
+}
+
+
+
+
+
+
