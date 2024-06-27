@@ -1,0 +1,29 @@
+/*Header*/
+
+.Header {
+  margin: 0;
+  padding: 30px;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  background: black;
+}
+
+.Header .myName i {
+  color: yellow;
+  text-shadow: 0 0 50px rgba(255, 255, 0, 1);
+}
+
+.Header b {
+  font-size: 3rem;
+}
+
+.headerBtn button {
+  width: 140px;
+}
+
