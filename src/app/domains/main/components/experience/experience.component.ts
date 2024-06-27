@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-experience',
@@ -8,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrl: './experience.component.css'
 })
 export class ExperienceComponent {
+
+  isEducation=signal(false);
+
+  changeIsEducation(){
+    this.isEducation.update((oldValue)=>!oldValue);
+  }
 
 }

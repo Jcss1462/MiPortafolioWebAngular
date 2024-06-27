@@ -1,134 +1,150 @@
-
-
 /*Experiencia*/
 
 .experience {
-    margin: 0;
-    padding: 30px;
-    background: rgb(0, 0, 0);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 2rem;
-    color: rgb(255, 255, 255);
-  }
-  
-  .timeline {
-    position: relative;
-    max-width: 800px;
-    width: 100%;
-    padding: 20px;
-    background: #000000;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .timeline::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    width: 20px;
-    border-radius: 20px;
+  margin: 0;
+  padding: 30px;
+  background: rgb(0, 0, 0);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+}
+
+
+#experienceCheck{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-switch{
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#experienceCheck label{
+  font-size: 1.4rem;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  background: #000000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 45%;
+  width: 20px;
+  border-radius: 20px;
+  background: linear-gradient(0deg, rgb(13, 110, 253), rgb(255, 0, 150));
+  animation: gradientAnimation 5s infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
     background: linear-gradient(0deg, rgb(13, 110, 253), rgb(255, 0, 150));
-    animation: gradientAnimation 5s infinite;
   }
-  
-  @keyframes gradientAnimation {
-    0% {
-      background: linear-gradient(0deg, rgb(13, 110, 253), rgb(255, 0, 150));
-    }
-  
-    50% {
-      background: linear-gradient(180deg, rgb(255, 0, 150), rgb(13, 110, 253));
-    }
-  
-    100% {
-      background: linear-gradient(0deg, rgb(13, 110, 253), rgb(255, 0, 150));
-    }
+
+  50% {
+    background: linear-gradient(180deg, rgb(255, 0, 150), rgb(13, 110, 253));
   }
-  
-  
+
+  100% {
+    background: linear-gradient(0deg, rgb(13, 110, 253), rgb(255, 0, 150));
+  }
+}
+
+
+.timeline-event {
+  position: relative;
+  width: 317px;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-event::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline-event-left {
+  left: -40%;
+  text-align: right;
+}
+
+.timeline-event-left::after {
+  left: 100%;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #fff transparent transparent;
+}
+
+.timeline-event-right {
+  right: -60%;
+  text-align: left;
+}
+
+.timeline-event-right::after {
+  right: 100%;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #fff;
+}
+
+.timeline-event .position {
+  font-size: 1em;
+  font-weight: bold;
+  color: #FFFFFF;
+  ;
+}
+
+.timeline-event .company {
+  font-size: 0.9em;
+  color: #F0E68C;
+}
+
+.timeline-event .duration {
+  font-size: 0.7em;
+  color: #F0E68C
+}
+
+
+@media (max-width: 1522px) {
+  .timeline::before {
+    left: 20px;
+  }
+
   .timeline-event {
-    position: relative;
-    width: 317px;
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 40px);
+    margin-left: 40px;
   }
-  
-  .timeline-event::after {
-    content: '';
-    position: absolute;
-    top: 20px;
-    width: 0;
-    height: 0;
-    border-style: solid;
+
+  .timeline-event-left,
+  .timeline-event-right {
+    left: 0 !important;
+    text-align: left;
   }
-  
-  .timeline-event-left {
-    left: -35%;
-    text-align: right;
-  }
-  
-  .timeline-event-left::after {
-    left: 100%;
+
+  .timeline-event-left::after,
+  .timeline-event-right::after {
+    left: -10px;
     border-width: 10px 10px 10px 0;
     border-color: transparent #fff transparent transparent;
   }
-  
-  .timeline-event-right {
-    right: -60%;
-    text-align: left;
-  }
-  
-  .timeline-event-right::after {
-    right: 100%;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent #fff;
-  }
-  
-  .timeline-event .position {
-    font-size: 1em;
-    font-weight: bold;
-    color: #FFFFFF;
-    ;
-  }
-  
-  .timeline-event .company {
-    font-size: 0.9em;
-    color: #F0E68C;
-  }
-  
-  .timeline-event .duration {
-    font-size: 0.7em;
-    color: #F0E68C
-  }
-  
-  
-  @media (max-width: 1522px) {
-    .timeline::before {
-      left: 20px;
-    }
-  
-    .timeline-event {
-      width: calc(100% - 40px);
-      margin-left: 40px;
-    }
-  
-    .timeline-event-left,
-    .timeline-event-right {
-      left: 0 !important;
-      text-align: left;
-    }
-  
-    .timeline-event-left::after,
-    .timeline-event-right::after {
-      left: -10px;
-      border-width: 10px 10px 10px 0;
-      border-color: transparent #fff transparent transparent;
-    }
-  }
+}

@@ -3,7 +3,20 @@
 
     <div class="row">
         <div class="col-sm-12 text-center">
-            <p><b>Experiencia Laboral</b></p>
+            <p><b>Experiencia</b></p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="experienceCheck" class="col-sm-12">
+            <label for="flexSwitchCheckReverse">Laboral</label>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckReverse"
+                    (change)="changeIsEducation()">
+            </div>
+            <label for="flexSwitchCheckReverse">Educación</label>
+            <br>
+            <br>
         </div>
     </div>
 
@@ -13,6 +26,8 @@
         <div class="col-sm-4">
 
             <div class="timeline">
+
+                @if(isEducation()==false){
                 <div class="timeline-event timeline-event-left">
                     <p class="position">Analista Programador</p>
                     <p class="company"> Comestibles Aldor</p>
@@ -28,6 +43,25 @@
                     <p class="company"> Colgate Palmolive</p>
                     <p class="duration">Jun 2021 - Dic 2021</p>
                 </div>
+                }@else{
+
+                <div class="timeline-event timeline-event-left">
+                    <p class="position">Platzi</p>
+                    <p class="duration">En curso</p>
+                </div>
+                <div class="timeline-event timeline-event-right">
+                    <p class="position">Ingenieria de Sistemas</p>
+                    <p class="company"> Universidad de San Buenaventura</p>
+                    <p class="duration">Mar 2022</p>
+                </div>
+                <div class="timeline-event timeline-event-left">
+                    <p class="position">Ingenieria Multimedia</p>
+                    <p class="company"> Universidad de San Buenaventura</p>
+                    <p class="duration">Mar 2022</p>
+                </div>
+
+                }
+
             </div>
 
         </div>
@@ -39,4 +73,3 @@
 
 
 </div>
-
