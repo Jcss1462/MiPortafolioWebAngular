@@ -63,7 +63,17 @@
 
 @media (max-width: 726px) {
 
+    .stackCategory{
+
+        text-align: center;
+    }
+
     .stackContainer{
+        display: flex;
+        justify-content: center;
+    }
+
+    .stackContainer .stackItemContainer .col-sm-3{
         display: flex;
         justify-content: center;
     }
