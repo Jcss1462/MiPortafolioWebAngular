@@ -1,0 +1,64 @@
+<div class="contactMe row">
+
+    <div class="col-sm-6">
+
+        <div class="contact-section">
+            <div class="contact-container">
+                <h1><b>Contactame</b></h1>
+                <p>Estoy disponible para proyectos interesantes y nuevas oportunidades. ¡No dudes en contactarme!
+                    enviando un correo a <b>jcss1462&#64;gmail.com.</b></p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="col-sm-6 form-floating">
+
+        <form class="formContainer" [formGroup]="contactForm" (ngSubmit)="submitForm()">
+            <div>
+                @if (contactForm.get('nombre')!.invalid && contactForm.get('nombre')!.touched) {
+                <div class="error-message">Nombre es requerido</div>
+                }
+                <input type="text" class="form-control" placeholder="Nombre" id="nombre" formControlName="nombre"
+                    [class.invalid]="contactForm.get('nombre')!.invalid && contactForm.get('nombre')!.touched">
+
+            </div>
+
+            <div>
+                @if(contactForm.get('email')!.errors){
+                @if (contactForm.get('email')!.errors!["required"] && contactForm.get('email')!.touched) {
+                <div class="error-message">Correo electrónico es requerido</div>
+                }
+                @if (contactForm.get('email')!.errors!["email"] && contactForm.get('email')!.touched) {
+                <div class="error-message">Correo electrónico inválido</div>
+                }
+                }
+                <input type="email" class="form-control" placeholder="Email" id="email" formControlName="email" 
+                [class.invalid]="contactForm.get('email')!.invalid && contactForm.get('email')!.touched">
+            </div>
+
+            <div>
+                @if (contactForm.get('asunto')!.invalid && contactForm.get('asunto')!.touched) {
+                    <div class="error-message">Asunto es requerido</div>
+                }
+                <input type="text" class="form-control" placeholder="Asunto" id="asunto" formControlName="asunto"
+                [class.invalid]="contactForm.get('asunto')!.invalid && contactForm.get('asunto')!.touched">
+            </div>
+
+            <div>
+                @if (contactForm.get('mensaje')!.invalid && contactForm.get('mensaje')!.touched) {
+                    <div class="error-message">Mensaje es requerido</div>
+                }
+                <textarea class="form-control" placeholder="Mensaje" id="mensaje" formControlName="mensaje"
+                [class.invalid]="contactForm.get('mensaje')!.invalid && contactForm.get('mensaje')!.touched"></textarea>
+            </div>
+
+            <button [disabled]="!contactForm.valid" type="submit" class="btn btn-primary"><b>Enviar <i class="bi bi-send"></i></b></button>
+        </form>
+
+    </div>
+
+</div>
+
+

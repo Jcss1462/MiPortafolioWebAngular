@@ -30,6 +30,11 @@
     border: 1px solid #303030;
 }
 
+.itemContainer:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más grande */
+}
+
 
 .itemContainer .imageContainer {
     display: flex;
@@ -58,6 +63,10 @@
 
 @media (max-width: 726px) {
 
+    .stackContainer{
+        display: flex;
+        justify-content: center;
+    }
   
     .itemContainer .imageContainer {
         width: 100%;
