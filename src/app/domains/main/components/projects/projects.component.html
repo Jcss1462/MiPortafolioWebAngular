@@ -10,8 +10,8 @@
 
     <div class="row cardContainer">
 
-        @if (i%0!=0) {
-        <div class="col-sm-6">
+        @if (i%2!=0) {
+        <div class="col-sm-6 mainImageContainer">
             <img [src]="item.mainImage" [alt]="item.Title" class="img-framed">
         </div>
         }
@@ -35,7 +35,7 @@
             <div class="linksRow row">
                 @for (link of item.links; track link.linkName) {
                 <div class="col-sm-1">
-                    <a [href]="link.url" target="_blank"><i [class]="link.class"></i></a>
+                    <a [href]="link.url" target="_blank"><i [class]="link.class"></i></a>&nbsp;
                 </div>
                 }
             </div>
@@ -43,8 +43,8 @@
         </div>
 
 
-        @if (i%0==0) {
-        <div class="col-sm-6">
+        @if (i%2==0) {
+        <div class="col-sm-6 mainImageContainer" >
             <img [src]="item.mainImage" [alt]="item.Title" class="img-framed">
         </div>
         }

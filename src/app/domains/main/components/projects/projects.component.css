@@ -12,11 +12,16 @@
 }
 
 .cardContainer{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.cardContainer  .mainImageContainer{
     padding: 30px;
 }
 
-.cardContainer img{
-    width:500px;
+.cardContainer  .mainImageContainer img{
+    width:100%;
 }
 
 .img-framed {
@@ -38,7 +43,6 @@
     border: 1px solid #e0e0e0;
     border-radius: 10px;
     transition: transform 0.2s, box-shadow 0.2s;
-    margin-bottom: 20px;
     text-align: left;
 }
 
@@ -49,20 +53,19 @@
 .project-title {
     font-size: 1em;
     margin-bottom: 10px;
-    color: #333333;
+    color: rgb(240,230,140);
 }
 
 .project-description {
     font-size: 0.6em;
     margin-bottom: 15px;
-    color: #666666;
+    color: #d1d1d1;
 }
 
 
 .tecnologyLable{
     font-size: 0.6em;
 }
-
 
 .tecnologyContainer {
     display: flex;
@@ -81,6 +84,7 @@
 }
 
 .tecnology-content img {
+    min-width: 10px;
     width: 50px;
     height: auto;
     margin: 10px;
@@ -90,6 +94,7 @@
     font-size: 0.5em;
     color: #ffffff;
 }
+
 
 
 
