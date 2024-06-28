@@ -1,0 +1,48 @@
+<div class="stack  row">
+
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <p><b>Mi Stack</b></p>
+        </div>
+    </div>
+
+    <div class="row stackContainer">
+
+    @for (stack of stacks; track stack) {
+        <div class="row stackCategory">
+           <b>{{stack.categoria}}</b> 
+        </div>
+
+        <div class="row stackItemContainer">
+            
+            @for (item of stack.items; track item) {
+                <div class="col-sm-3">
+                   
+                    <div class="itemContainer row">
+                            
+                        <div class="col-sm-3 imageContainer">
+                            <img [src]="item.logo" [alt]="item.name">
+                        </div>
+
+                        <div class="col-sm-9 textContainer">
+                            <p>
+                                <b>{{item.name}}</b>
+                                <br>
+                                {{item.desc}}
+                            </p>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            }
+
+        </div>
+
+    }
+
+    </div>
+
+
+</div>

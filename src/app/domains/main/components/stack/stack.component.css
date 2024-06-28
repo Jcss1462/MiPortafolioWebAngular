@@ -1,0 +1,78 @@
+.stack {
+    margin: 0;
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    background: black;
+}
+
+.stackCategory {
+    display: flex;
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+
+.itemContainer {
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.096);
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #303030;
+}
+
+
+.itemContainer .imageContainer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.itemContainer .imageContainer img {
+    width: 45px;
+}
+
+.itemContainer .textContainer {
+    display: flex;
+    text-align: left;
+    font-size: 0.8rem;
+    color: rgb(173, 173, 173);
+}
+
+.itemContainer .textContainer b{
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+
+@media (max-width: 726px) {
+
+  
+    .itemContainer .imageContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .itemContainer .textContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 0.8rem;
+        color: rgb(173, 173, 173);
+    }
+
+}
+
