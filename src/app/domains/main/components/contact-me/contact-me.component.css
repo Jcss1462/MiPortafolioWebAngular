@@ -77,3 +77,11 @@
     margin-top: 5px;
     text-align: start;
 }
+
+
+
+@media (max-width: 563px) {
+    .formContainer{
+        width: 90%;
+    }
+}
