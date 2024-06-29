@@ -9,9 +9,17 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
   background: black;
+
+}
+
+.containerText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .Header .myName i {
@@ -20,10 +28,38 @@
 }
 
 .Header b {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
-.headerBtn button {
+.headerBtn {
+  margin-top: 10px;
+}
+
+button {
   width: 140px;
+  margin-bottom: 10px;
 }
 
+/****************************/
+
+.containerImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.containerImage img {
+  width: 100%;
+  position: relative;
+  border: 5px solid rgba(0, 0, 0, 0.432);
+  /* Optional: add a white border */
+  border-radius: 2000px;
+}
+
+
+@media (max-width: 469px) {
+  .Header .myName {
+    font-size: 1rem;
+  }
+}
