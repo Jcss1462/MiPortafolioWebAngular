@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators, FormArray } from '@angular/forms';
 
+import { ToastrService } from 'ngx-toastr';
+
 @Component({
   selector: 'app-contact-me',
   standalone: true,
@@ -12,7 +14,7 @@ export class ContactMeComponent {
 
   contactForm!: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder, private toastr: ToastrService) { }
 
   ngOnInit(): void {
     this.contactForm = this.formBuilder.group({
@@ -26,15 +28,12 @@ export class ContactMeComponent {
 
 
   submitForm() {
-  
-   
+    
     if (this.contactForm.valid) {
-      // Aquí podrías enviar los datos a través de un servicio HTTP o manejar la lógica de envío
-      console.log(this.contactForm.value); // Aquí tendrás acceso a los valores del formulario
-      // Puedes limpiar el formulario después de enviarlo
+      this.toastr.success('Hello world!', 'Toastr fun!');
       this.contactForm.reset();
     } else {
-      alert("Ocurrió un error insuperado enviando el mensaje");
+      this.toastr.error("Ocurrio un problema enviando el correo");
     }
   }
 
