@@ -4,7 +4,6 @@
   margin: 0;
   padding: 30px;
   width: 100%;
-  height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,6 +43,16 @@ button {
   width: 140px;
   margin-bottom: 10px;
 }
+
+.socialRedRow{
+  margin-top: 15px;
+  color: white;
+}
+
+.socialRedRow a{
+  color: white;
+}
+
 
 /****************************/
 
