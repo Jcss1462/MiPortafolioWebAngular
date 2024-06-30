@@ -104,7 +104,7 @@ export class StackComponent {
         {
           name:"AWS",
           logo:"assets/awsLogo.png",
-          desc:"Proveedor de servioo en la nube"
+          desc:"Proveedor de servicio en la nube"
         },
         {
           name:"Docker",

@@ -13,7 +13,7 @@ export class ProjectsComponent {
   projects=[
     {
       Title:"Platzi Store",
-      Description: "Ecomerce desarrollado en angular para probar la nuevas capacidades de la versión 18 del framework. \n La data de este proyecto se alimenta de un api publica de platzi",
+      Description: "Ecomerce desarrollado en angular para probar las nuevas capacidades de la versión 18 del framework. \n La data de este proyecto se alimenta de un api publica de platzi",
       mainImage: "assets/platziStore.PNG",
       icons:[{
         TecnolgyName:"Angular",
