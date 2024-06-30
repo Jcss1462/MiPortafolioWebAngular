@@ -22,6 +22,11 @@
   text-align: center;
 }
 
+.containerText .containerTextRow{
+  display: flex;
+  justify-content: center;
+}
+
 .Header .myName i {
   color: yellow;
   text-shadow: 0 0 50px rgba(255, 255, 0, 1);
@@ -62,4 +67,9 @@ button {
   .Header .myName {
     font-size: 1rem;
   }
+
+  .Header b {
+    font-size: 2.5rem;
+  }
+  
 }
