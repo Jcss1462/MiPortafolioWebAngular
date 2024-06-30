@@ -88,13 +88,17 @@ export class StackComponent {
         {
           name:"Postgresql",
           logo:"assets/Postgresql_elephant.png",
-          desc:"Framework de estilos"
+          desc:"Motor de base de datos"
         },
-        
         {
           name:"Sql Server",
           logo:"assets/sqlServerLogo.png",
-          desc:"Framework para desarrollo BackEnd"
+          desc:"Motor de base de datos"
+        },
+        {
+          name:"Amazon DynamoDB",
+          logo:"assets/DynamoDBLogo.png",
+          desc:"Base de datos NoSQL de Amazon"
         }
       ]
     },

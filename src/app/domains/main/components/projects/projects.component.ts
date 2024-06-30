@@ -12,6 +12,43 @@ export class ProjectsComponent {
 
   projects=[
     {
+      Title:"Mi portafolio web",
+      Description: "Desarrollé esta página web utilizando Angular 18, alojada en Firebase, que se conecta con un backend desarrollado en Node.js y alojado en Heroku.\nEsta página tiene como objetivo servir de repositorio para mi trabajo y mostrar mi talento.",
+      mainImage: "assets/portadaPortafolioWeb.png",
+      icons:[{
+        TecnolgyName:"Angular",
+        Img:"assets/angularIcon.png"
+      },{
+        TecnolgyName:"Bootstrap",
+        Img:"assets/Bootstrap_logo.png"
+      },{
+        TecnolgyName:"Firebase",
+        Img:"assets/fireBaseLogo.png"
+      },{
+        TecnolgyName:"Node.Js",
+        Img:"assets/nodejsLogo.png"
+      },{
+        TecnolgyName:"Heroku",
+        Img:"assets/herokuLogo.png"
+      }],
+      links:[{
+        linkName:"GitHub",
+        class:"bi bi-github",
+        url:"https://github.com/Jcss1462/MiPortafolioWebAngular"
+      },
+      {
+        linkName:"GitHub",
+        class:"bi bi-github",
+        url:"https://github.com/Jcss1462/ServicioCorreos"
+      },
+      {
+        linkName:"Web",
+        class:"bi bi-globe-americas",
+        url:"https://juancamilosalazarserna.xyz/"
+      }
+    ]
+    },
+    {
       Title:"Platzi Store",
       Description: "Ecomerce desarrollado en angular para probar las nuevas capacidades de la versión 18 del framework. \n La data de este proyecto se alimenta de un api publica de platzi",
       mainImage: "assets/platziStore.PNG",
@@ -53,7 +90,7 @@ export class ProjectsComponent {
     {
       Title:"La mano de buzz",
       Description: "Composición creada con blender",
-      mainImage: "assets/buzzHand.PNG",
+      mainImage: "assets/buzzHand.jpg",
       icons:[{
         TecnolgyName:"Blender",
         Img:"assets/blenderLogo.png"
@@ -68,7 +105,7 @@ export class ProjectsComponent {
     {
       Title:"LowPolly En el Espacio",
       Description: "Composición creada con blender y Unity",
-      mainImage: "assets/lowPollyEnElEspacio.PNG",
+      mainImage: "assets/lowPollyEnElEspacio.jpg",
       icons:[{
         TecnolgyName:"Blender",
         Img:"assets/blenderLogo.png"
