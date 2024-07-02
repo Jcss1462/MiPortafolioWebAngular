@@ -71,3 +71,10 @@
         transform: skewX(30deg);
     }
 }
+
+@media (max-width: 465px) {
+
+    .containerText {
+        font-size: 1rem;
+    }
+}

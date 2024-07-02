@@ -107,19 +107,19 @@
 }
 
 .timeline-event .position {
-  font-size: 1em;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #FFFFFF;
   ;
 }
 
 .timeline-event .company {
-  font-size: 0.9em;
+  font-size: 1rem;
   color: #F0E68C;
 }
 
 .timeline-event .duration {
-  font-size: 0.7em;
+  font-size: 1rem;;
   color: #F0E68C
 }
 

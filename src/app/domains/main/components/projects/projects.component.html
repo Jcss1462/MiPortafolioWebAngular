@@ -23,7 +23,7 @@
             <b class="tecnologyLable">Tecnologias:</b>
             <div class="project-icons row">
                 @for (tecnologi of item.icons; track tecnologi) {
-                <div class="tecnologyContainer col-sm-3">
+                <div class="tecnologyContainer col-lg-3">
                     <div class="tecnology-content">
                         <img [src]="tecnologi.Img" [alt]="tecnologi.TecnolgyName">
                         <label>{{tecnologi.TecnolgyName}}</label>
@@ -34,7 +34,7 @@
             <b class="tecnologyLable">Links:</b>
             <div class="linksRow row">
                 @for (link of item.links; track link.linkName) {
-                <div class="col-sm-1">
+                <div class="col-lg-1">
                     <a [href]="link.url" target="_blank"><i [class]="link.class"></i></a>&nbsp;
                 </div>
                 }
