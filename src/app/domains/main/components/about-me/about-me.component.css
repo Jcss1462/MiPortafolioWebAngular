@@ -77,4 +77,10 @@
     .containerText {
         font-size: 1rem;
     }
+
+    .framed-photo img {
+        display: block;
+        width: 200px;
+        border-radius: 50%;
+    }
 }
