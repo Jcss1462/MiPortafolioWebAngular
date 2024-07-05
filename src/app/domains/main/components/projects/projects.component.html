@@ -31,20 +31,22 @@
                 </div>
                 }
             </div>
-            <b class="tecnologyLable">Links:</b>
-            <div class="linksRow row">
-                @for (link of item.links; track link.linkName) {
-                <div class="col-lg-1">
-                    <a [href]="link.url" target="_blank"><i [class]="link.class"></i></a>&nbsp;
+            @if(item.links.length>0){
+
+                <b class="tecnologyLable">Links:</b>
+                <div class="linksRow row">
+                    @for (link of item.links; track link.linkName) {
+                    <div class="col-lg-1">
+                        <a [href]="link.url" target="_blank"><i [class]="link.class"></i></a>&nbsp;
+                    </div>
+                    }
                 </div>
-                }
-            </div>
+            }
 
         </div>
 
-
         @if (i%2==0) {
-        <div class="col-sm-6 mainImageContainer" >
+        <div class="col-sm-6 mainImageContainer">
             <img [src]="item.mainImage" [alt]="item.Title" class="img-framed">
         </div>
         }

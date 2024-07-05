@@ -8,7 +8,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: white;
   background: black;
 
@@ -19,6 +19,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+
+ 
 }
 
 .containerText .containerTextRow{
@@ -28,6 +30,9 @@
 
 .Header .myName i {
   color: yellow;
+  font-size: 1.3rem;
+  margin-left: 5px;
+  margin-right: 5px;
   text-shadow: 0 0 50px rgba(255, 255, 0, 1);
 }
 
@@ -42,11 +47,13 @@
 button {
   width: 140px;
   margin-bottom: 10px;
+  font-size: 1rem;
 }
 
 .socialRedRow{
   margin-top: 15px;
   color: white;
+  font-size: 1.8rem;
 }
 
 .socialRedRow a{
@@ -65,6 +72,7 @@ button {
 
 .containerImage img {
   width: 100%;
+  height: auto;
   position: relative;
   border: 5px solid rgba(0, 0, 0, 0.432);
   /* Optional: add a white border */

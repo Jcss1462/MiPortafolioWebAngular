@@ -51,20 +51,20 @@
 }
 
 .project-title {
-    font-size: 1em;
+    font-size: 1.8rem;
     margin-bottom: 10px;
-    color: rgb(240,230,140);
+    color: rgb(238, 238, 135);
 }
 
 .project-description {
-    font-size: 0.6em;
+    font-size: 1.2rem;
     margin-bottom: 15px;
     color: #d1d1d1;
 }
 
 
 .tecnologyLable{
-    font-size: 0.6em;
+    font-size: 1.3rem;
 }
 
 .tecnologyContainer {
@@ -91,7 +91,7 @@
 }
 
 .tecnology-content label {
-    font-size: 0.5em;
+    font-size: 1.2rem;
     color: #ffffff;
 }
 

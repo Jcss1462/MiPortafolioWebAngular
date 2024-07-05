@@ -95,11 +95,11 @@ export class ProjectsComponent {
         TecnolgyName:"Blender",
         Img:"assets/blenderLogo.png"
       }],
-      links:[{
+      links:[/*{
         linkName:"Instagram",
         class:"bi bi-instagram",
         url:"https://www.instagram.com/p/CihIijJO_ST/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-      }
+      }*/
     ]
     },
     {
@@ -113,11 +113,11 @@ export class ProjectsComponent {
         TecnolgyName:"Unity",
         Img:"assets/unityLogo.png"
       }],
-      links:[{
+      links:[/*{
         linkName:"Instagram",
         class:"bi bi-instagram",
         url:"https://www.instagram.com/p/CkVBCiks7qc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-      }
+      }*/
     ]
     }
 
