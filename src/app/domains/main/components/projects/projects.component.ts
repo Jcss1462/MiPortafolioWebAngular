@@ -87,39 +87,39 @@ export class ProjectsComponent {
       }
     ]
     },
-    {
-      Title:"La mano de buzz",
-      Description: "Composición creada con blender",
-      mainImage: "assets/buzzHand.jpg",
-      icons:[{
-        TecnolgyName:"Blender",
-        Img:"assets/blenderLogo.png"
-      }],
-      links:[/*{
-        linkName:"Instagram",
-        class:"bi bi-instagram",
-        url:"https://www.instagram.com/p/CihIijJO_ST/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-      }*/
-    ]
-    },
-    {
-      Title:"LowPolly En el Espacio",
-      Description: "Composición creada con blender y Unity",
-      mainImage: "assets/lowPollyEnElEspacio.jpg",
-      icons:[{
-        TecnolgyName:"Blender",
-        Img:"assets/blenderLogo.png"
-      },{
-        TecnolgyName:"Unity",
-        Img:"assets/unityLogo.png"
-      }],
-      links:[/*{
-        linkName:"Instagram",
-        class:"bi bi-instagram",
-        url:"https://www.instagram.com/p/CkVBCiks7qc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-      }*/
-    ]
-    }
+    // {
+    //   Title:"La mano de buzz",
+    //   Description: "Composición creada con blender",
+    //   mainImage: "assets/buzzHand.jpg",
+    //   icons:[{
+    //     TecnolgyName:"Blender",
+    //     Img:"assets/blenderLogo.png"
+    //   }],
+    //   links:[/*{
+    //     linkName:"Instagram",
+    //     class:"bi bi-instagram",
+    //     url:"https://www.instagram.com/p/CihIijJO_ST/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+    //   }*/
+    // ]
+    // },
+    // {
+    //   Title:"LowPolly En el Espacio",
+    //   Description: "Composición creada con blender y Unity",
+    //   mainImage: "assets/lowPollyEnElEspacio.jpg",
+    //   icons:[{
+    //     TecnolgyName:"Blender",
+    //     Img:"assets/blenderLogo.png"
+    //   },{
+    //     TecnolgyName:"Unity",
+    //     Img:"assets/unityLogo.png"
+    //   }],
+    //   links:[/*{
+    //     linkName:"Instagram",
+    //     class:"bi bi-instagram",
+    //     url:"https://www.instagram.com/p/CkVBCiks7qc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+    //   }*/
+    // ]
+    // }
 
 
   ]
