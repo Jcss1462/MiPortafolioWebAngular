@@ -28,37 +28,27 @@
             <div class="timeline">
 
                 @if(isEducation()==false){
-                <div class="timeline-event timeline-event-left">
-                    <p class="position">Analista Programador</p>
-                    <p class="company"> Comestibles Aldor</p>
-                    <p class="duration">Abr 2022 - Feb 2024</p>
-                </div>
-                <div class="timeline-event timeline-event-right">
-                    <p class="position">Analista de contenido web</p>
-                    <p class="company"> Colgate Palmolive</p>
-                    <p class="duration">Ene 2022 - Abr 2022</p>
-                </div>
-                <div class="timeline-event timeline-event-left">
-                    <p class="position">Desarrollador Web</p>
-                    <p class="company"> Colgate Palmolive</p>
-                    <p class="duration">Jun 2021 - Dic 2021</p>
-                </div>
+
+                    @for (item of experienciaLaboral(); track item.id; let i =$index) {
+                    <div class="timeline-event timeline-event-left" [class.timeline-event-left]="i%2==0"
+                        [class.timeline-event-right]="i%2!=0">
+                        <p class="position">{{item.position}}</p>
+                        <p class="company"> {{item.company}}</p>
+                        <p class="duration">{{item.duration}}</p>
+                    </div>
+                    }
+
+
                 }@else{
 
-                <div class="timeline-event timeline-event-left">
-                    <p class="position">Platzi</p>
-                    <p class="duration">En curso</p>
-                </div>
-                <div class="timeline-event timeline-event-right">
-                    <p class="position">Ingenieria de Sistemas</p>
-                    <p class="company"> Universidad de San Buenaventura</p>
-                    <p class="duration">Mar 2022</p>
-                </div>
-                <div class="timeline-event timeline-event-left">
-                    <p class="position">Ingenieria Multimedia</p>
-                    <p class="company"> Universidad de San Buenaventura</p>
-                    <p class="duration">Mar 2022</p>
-                </div>
+                    @for (item of experienciaEducacion(); track item.id; let i =$index) {
+                    <div class="timeline-event timeline-event-left" [class.timeline-event-left]="i%2==0"
+                        [class.timeline-event-right]="i%2!=0">
+                        <p class="position">{{item.position}}</p>
+                        <p class="company"> {{item.company}}</p>
+                        <p class="duration">{{item.duration}}</p>
+                    </div>
+                    }
 
                 }
 
