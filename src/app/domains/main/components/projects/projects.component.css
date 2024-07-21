@@ -95,7 +95,37 @@
     color: #ffffff;
 }
 
-@media (max-width: 1522px) {}
+@media (max-width: 566px) {
+
+    .project-card{
+      
+        justify-content: center;
+        text-align: center;
+    }
+
+    .tecnologyContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tecnology-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tecnology-content img {
+        margin: 0 auto;
+    }
+
+    .tecnology-content label {
+        margin-left: 10px; /* Ajusta este valor según tu preferencia */
+    }
+
+}
 
 
 

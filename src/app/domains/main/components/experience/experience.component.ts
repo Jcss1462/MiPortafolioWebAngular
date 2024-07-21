@@ -3,6 +3,7 @@ import { ExperienceService } from '../../../shared/services/experience.service';
 import { ExperienciaLaboral } from '../../../shared/models/experienciaLaboral.model';
 import { ToastrService } from 'ngx-toastr';
 import { ExperienciaEducacion } from '../../../shared/models/experienciaEducacion.model';
+import { SpinnerService } from '../../../shared/services/spinner.service';
 
 @Component({
   selector: 'app-experience',
@@ -13,10 +14,8 @@ import { ExperienciaEducacion } from '../../../shared/models/experienciaEducacio
 })
 export class ExperienceComponent {
 
-
-
-
   isEducation=signal(false);
+  private spinnerService = inject(SpinnerService);
   private experienceService = inject(ExperienceService);
   experienciaLaboral=signal<ExperienciaLaboral[]>([]);
   experienciaEducacion=signal<ExperienciaEducacion[]>([]);
@@ -32,6 +31,7 @@ export class ExperienceComponent {
 
   
   getExpereienciaLaboral(){
+    this.spinnerService.showSpinner.update(() => true);
     this.experienceService.getExperienceLaboral().subscribe({
       next: (experienciaLaboral) => {
         this.experienciaLaboral.set(experienciaLaboral);      
@@ -43,12 +43,15 @@ export class ExperienceComponent {
   }
 
   getExpereienciaEducacion(){
+    this.spinnerService.showSpinner.update(() => true);
     this.experienceService.getExperienceEducacion().subscribe({
       next: (experienciaEducacion) => {
-        this.experienciaEducacion.set(experienciaEducacion);      
+        this.experienciaEducacion.set(experienciaEducacion); 
+        this.spinnerService.showSpinner.update(() => false);
       },
       error: (err) => {
         this.toastr.error("Ocurrio un error al cargar la experiencia de educación");
+        this.spinnerService.showSpinner.update(() => false);
       },
     });
   }

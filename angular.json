@@ -89,10 +89,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "MiPortafolioWebAngular:build:production"
+              "buildTarget": "mi-portafolio-web-angular:build:production"
             },
             "development": {
-              "buildTarget": "MiPortafolioWebAngular:build:development"
+              "buildTarget": "mi-portafolio-web-angular:build:development"
             }
           },
           "defaultConfiguration": "development"

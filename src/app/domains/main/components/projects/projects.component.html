@@ -6,48 +6,50 @@
         </div>
     </div>
 
-    @for (item of projects; track item.Title; let i =$index) {
+    @for (item of projectsData(); track item.id; let i =$index) {
 
     <div class="row cardContainer">
 
         @if (i%2!=0) {
         <div class="col-sm-6 mainImageContainer">
-            <img [src]="item.mainImage" [alt]="item.Title" class="img-framed">
+            <img [src]="item.mainImage" [alt]="item.title" class="img-framed">
         </div>
         }
 
         <div class="col-sm-6 project-card">
 
-            <h2 class="project-title"><b>{{item.Title}}</b></h2>
-            <p class="project-description">{{item.Description}}</p>
-            <b class="tecnologyLable">Tecnologias:</b>
+            <h2 class="project-title"><b>{{item.title}}</b></h2>
+            <p class="project-description">{{item.description}}</p>
+            @if(item.icons.length>0){
+            <b class="tecnologyLable">Tecnologías:</b>
             <div class="project-icons row">
                 @for (tecnologi of item.icons; track tecnologi) {
                 <div class="tecnologyContainer col-lg-3">
                     <div class="tecnology-content">
-                        <img [src]="tecnologi.Img" [alt]="tecnologi.TecnolgyName">
-                        <label>{{tecnologi.TecnolgyName}}</label>
+                        <img [src]="tecnologi.img" [alt]="tecnologi.tecnologyName">
+                        <label>{{tecnologi.tecnologyName}}</label>
                     </div>
                 </div>
                 }
             </div>
+            }
             @if(item.links.length>0){
 
-                <b class="tecnologyLable">Links:</b>
-                <div class="linksRow row">
-                    @for (link of item.links; track link.linkName) {
-                    <div class="col-lg-1">
-                        <a [href]="link.url" target="_blank"><i [class]="link.class"></i></a>&nbsp;
-                    </div>
-                    }
+            <b class="tecnologyLable">Links:</b>
+            <div class="linksRow row">
+                @for (link of item.links; track link.linkName) {
+                <div class="col-lg-1">
+                    <a [href]="link.url" target="_blank"><i [class]="link.class"></i></a>&nbsp;
                 </div>
+                }
+            </div>
             }
 
         </div>
 
         @if (i%2==0) {
         <div class="col-sm-6 mainImageContainer">
-            <img [src]="item.mainImage" [alt]="item.Title" class="img-framed">
+            <img [src]="item.mainImage" [alt]="item.title" class="img-framed">
         </div>
         }
 
