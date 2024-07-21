@@ -9,6 +9,7 @@ import { provideToastr } from 'ngx-toastr';
 import { provideHttpClient } from '@angular/common/http';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+import { getStorage, provideStorage } from '@angular/fire/storage';
 
 export const appConfig: ApplicationConfig = {
   providers: [provideZoneChangeDetection({ eventCoalescing: true }),
@@ -25,5 +26,7 @@ export const appConfig: ApplicationConfig = {
                                               "apiKey":"AIzaSyB97UtXMIiCe_MtNNWKP7MozKijfMHD2JM",
                                               "authDomain":"miportafolioweb-1573a.firebaseapp.com",
                                               "messagingSenderId":"71796819636",
-                                              "measurementId":"G-6W6N55VT2W"})), provideFirestore(() => getFirestore())]
+                                              "measurementId":"G-6W6N55VT2W"})), 
+  provideFirestore(() => getFirestore()), 
+  provideStorage(() => getStorage())]
 };
