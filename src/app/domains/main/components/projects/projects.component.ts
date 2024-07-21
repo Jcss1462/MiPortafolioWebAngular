@@ -30,7 +30,6 @@ export class ProjectsComponent {
     this.projectService.getProjects().subscribe({
       next: (projects) => {
         this.projectsData.set(projects);
-        console.log(this.projectsData());
         this.spinnerService.showSpinner.update(() => false);      
       },
       error: (err) => {

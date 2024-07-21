@@ -37,7 +37,7 @@
 
             <b class="tecnologyLable">Links:</b>
             <div class="linksRow row">
-                @for (link of item.links; track link.linkName) {
+                @for (link of item.links; track link.url) {
                 <div class="col-lg-1">
                     <a [href]="link.url" target="_blank"><i [class]="link.class"></i></a>&nbsp;
                 </div>
