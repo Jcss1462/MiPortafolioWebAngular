@@ -80,6 +80,19 @@ button {
 }
 
 
+@media (min-width: 1199px) {
+  #leftButton{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #rightButton{
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+}
+
 @media (max-width: 469px) {
   .Header .myName {
     font-size: 1rem;

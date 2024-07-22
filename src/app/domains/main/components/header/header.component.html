@@ -27,7 +27,8 @@
                 </div>
 
                 <div class="row headerBtn">
-                    <div class="col-xl-4">
+                 
+                    <div id="leftButton" class="col-xl-4">
                         <button (click)="scrollToSection('aboutMe')" class="btn btn-primary HeaderButton">Sobre Mi <i
                                 class="bi bi-person"></i></button>
                     </div>
@@ -35,10 +36,11 @@
                         <button (click)="scrollToSection('contactMe')" class="btn btn-primary HeaderButton">Contáctame
                             <i class="bi bi-envelope"></i></button>
                     </div>
-                    <div class="col-xl-4">
+                    <div id="rightButton" class="col-xl-4">
                         <button (click)="downloadPDF()" class="btn btn-primary HeaderButton">Descarga CV <i
                                 class="bi bi-file-earmark-arrow-down"></i></button>
                     </div>
+                   
                 </div>
 
                 <div class="row socialRedRow">
