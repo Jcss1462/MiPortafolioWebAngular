@@ -85,3 +85,11 @@
         width: 90%;
     }
 }
+
+
+@media (max-width: 381px) {
+    .contact-container{
+        padding: 0px;
+    }
+     
+}

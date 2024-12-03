@@ -103,3 +103,23 @@ button {
   }
   
 }
+
+
+@media (max-width: 391px) {
+  .Header .myName {
+    font-size: 0.9rem;
+  }
+  .Header b {
+    font-size: 2rem;
+  }  
+}
+
+
+@media (max-width: 371px) {
+  .Header .myName {
+    font-size: 0.8rem;
+  }
+  .Header b {
+    font-size: 1.8rem;
+  }  
+}
