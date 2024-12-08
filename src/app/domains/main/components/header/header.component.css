@@ -105,6 +105,14 @@ button {
 }
 
 
+@media (max-width: 396px) {
+  .Header b {
+    font-size: 2.3rem;
+  }  
+}
+
+
+
 @media (max-width: 391px) {
   .Header .myName {
     font-size: 0.9rem;
