@@ -9,5 +9,5 @@ export const environment = {
     appId: "1:71796819636:web:f02cc82effadefcca4f9e1",
     measurementId: "G-6W6N55VT2W"
   },
-  mailApi:"https://54.221.194.158:8443/send-email"
+  mailApi:"https://jcss1462mailsender.duckdns.org:8443/send-email"
 };
